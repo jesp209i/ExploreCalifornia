@@ -5,6 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Tour\tours.htm" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Tour\tours.htm">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="Views\Home\index.cshtml" />
   </ItemGroup>
 
