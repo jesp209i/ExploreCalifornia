@@ -79,7 +79,8 @@ namespace ExploreCalifornia
                 await next();
             });
 
-            app.UseMiddleware<ExcludeLocalhostMiddleware>();
+            // egen middleware - udkommenteret da den siger at localhost ikke må få adgang med en HTTP401
+            //app.UseMiddleware<ExcludeLocalhostMiddleware>();
 
             app.UseFileServer();
 
